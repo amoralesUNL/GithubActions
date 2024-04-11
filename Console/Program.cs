@@ -14,7 +14,7 @@ namespace GithubActionsLab
                 {
                     Func<string, string, double> operation = null;
                     Console.WriteLine("1) Add (x+y)");
-                    Console.WriteLine("2) Subtract (x-y)");
+                    Console.WriteLine("2) Subtract (x-y)"); 
                     Console.WriteLine("3) Multiply (x*y)");
                     Console.WriteLine("4) Divide (x/y)");
                     Console.WriteLine("5) Power (x^y)");
@@ -84,7 +84,7 @@ namespace GithubActionsLab
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            throw new NotImplementedException();
+            return Math.Pow(double.Parse(x), double.Parse(y));
         }
     }
 
